@@ -1,0 +1,104 @@
+body 
+{
+	background-color: LightGray;
+}
+
+h1 
+{
+	margin-left: 800px;
+	text-align: center;
+	color: gray;
+	border: 10px solid gray;
+	margin-right: 800px;
+	
+}
+
+h2
+{
+	color: gray;
+	text-align: center;
+	
+}
+
+a{
+	color: White;
+	border: 10px solid gray; 
+	padding:5px;
+}
+
+p 
+{
+	margin-left: 800px;
+	
+	
+}
+
+li 
+{
+	
+	border: 20px inset yellow;	
+	
+}
+
+
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+div
+{
+	//padding-right: 500px;
+	
+}
+
+aside
+{
+	
+}
+
+img
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.flex-container
+{
+	display: flex;
+	
+	flex-direction: column;
+
+	justify-content: center;
+	justify-content: space-around;	
+	align-items: center;
+		
+	
+	Height: 450px;
+}
+
+table
+{	
+	margin-left: auto;
+	margin-right: auto;
+
+	border: 10px solid Orange;
+}
+
+th 
+{
+	border: 10px solid Black;
+}
+	
+tr
+{
+
+	border: 10px solid Green;
+}
+
+

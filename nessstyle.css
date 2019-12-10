@@ -1,0 +1,300 @@
+body 
+{
+	background-color: LightGray;
+}
+
+
+.flex-container
+{
+	display: flex;
+	
+	flex-direction: column;
+
+	justify-content: center;
+	justify-content: space-around;	
+	align-items: center;
+		
+	Height: 275px;
+}
+
+h1 
+{	
+	text-align: center;
+	color: gray;
+	justify-content: center;
+	justify-content: space-around;	
+	align-items: center;
+	border: 10px solid gray;
+
+	margin-left: 800px;
+	margin-right: 800px;
+}
+
+
+#GHeader
+{
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid yellow;
+	text-align: center;
+	color: black;
+	background-color: orange;
+}
+
+table#gm
+{	
+	margin-top: 555px;
+
+	border: 10px solid Orange;
+}
+
+
+
+#AHeader
+{
+	margin-top: 580px;
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid blue;
+	text-align: center;
+	color: black;
+	background-color: Aqua;
+}
+
+
+table#am
+{	
+	margin-top: 500px;
+	
+	border: 10px solid Orange;
+}
+
+
+
+#SHeader
+{
+	margin-top: 525px;
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid;
+	border-color: rgb(255, 160, 100);
+	text-align: center;
+	color: black;
+	background-color: rgb(255, 255, 150);
+}
+
+table#sm
+{	
+	margin-top: 1990px;
+
+	border: 10px solid Orange;
+}
+
+
+
+#GTHeader
+{
+	margin-top: 20px;
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid;
+	border-color: rgb(185, 255, 140);
+	text-align: center;
+	color: black;
+	background-color: rgb(100, 255, 200);
+}
+
+table#GT
+{	
+	margin-top: 120px;
+	
+	border: 10px solid Orange;
+}
+
+#DRHeader
+{
+	margin-top: 140px;
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid;
+	border-color: rgb(185, 255, 140);
+	text-align: center;
+	color: black;
+	background-color: rgb(100, 255, 200);
+}
+
+table#DR
+{	
+	margin-top: 130px;
+	
+	border: 10px solid Orange;
+}
+
+
+#LedgeHeader
+{
+	margin-top: 150px;
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid;
+	border-color: chocolate;
+	text-align: center;
+	color: black;
+	background-color: rgb(205, 145, 75);
+}
+
+
+table#LO
+{	
+	margin-top: 0px;
+	//margin-bottom: 300px;
+
+	border: 10px solid Orange;
+}
+
+#StatsHeader
+{
+	margin-top: 20px;
+	margin-right: 850px;
+	margin-left: 850px;
+	border: 3px solid;
+	border-color: brown;
+	text-align: center;
+	color: black;
+	background-color: yellow;
+}
+
+ul#GroundUL
+{
+	margin-top: 280px;
+	border: 8px solid Orange;
+	
+}
+
+li#GroundLI
+{
+	border-top: 2px solid ;
+	border-bottom: 2px solid ;
+	border-color: rgb(205, 145, 75);
+	padding: 3px;
+}
+
+ul#AirUL
+{
+	
+
+	margin-top: 20px;
+	border: 8px solid Orange;
+	
+}
+
+ul
+{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+li#AirLI
+{
+	border-top: 2px solid ;
+	border-bottom: 2px solid ;
+	border-color: rgb(205, 145, 75);
+	padding: 3px;
+}
+
+a
+{
+	color: White;
+	
+	border: 10px solid gray; 
+	padding:5px;
+}
+
+h2
+{
+	color: gray;
+	text-align: center;	
+}
+
+
+h4
+{
+	text-align: center;
+	color: black;
+	border: 1px solid black;
+	
+	background-color: rgb(255,190,140); 
+}
+
+p 
+{
+	color: gray;	
+}
+
+
+mark#su
+{
+	
+	background-color: MediumSeagreen;
+}
+
+mark#act
+{
+	background-color: rgb(200,200,30);
+}
+
+mark#tot
+{
+	background-color: gray;
+}
+
+mark#el
+{
+	background-color: rgb(255,160,90);
+}
+
+mark#ll
+{
+	background-color: rgb(255,255,100);
+}
+
+mark#sst
+{
+	background-color: rgb(90,255,175);
+}
+mark#sl
+{
+	background-color: rgb(235,150,40);
+}
+
+mark#ssf
+{
+	background-color: red;
+}
+
+mark#n
+{
+	background-color: yellow;
+}
+
+mark#mhb
+{
+	background-color: rgb(160,205,40);
+}
+
+
+th 
+{	
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	justify-content: top;	
+
+	min-width: 240px;
+	max-width: 240px;	
+}
+
+
