@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<script type = "text/javascript">
+
+var showit;
+
+	function showImg(showit)
+{
+
+
+	if(showit == true)
+	{
+	var myimg = document.getElementById("NessMUShow").src
+	document.getElementById("NessMUShow").style.display="block";
+	}
+	else
+	{
+	var myimg = document.getElementById("NessMUShow").src
+	document.getElementById("NessMUShow").style.display="none";
+	}
+}
+
+
+function allowDrop(ev) 
+{
+  ev.preventDefault();
+}
+
+function drag(ev) 
+{
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) 
+{
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="OtherNessstyle.css">
+		<title> More Ness Stuff </title>
+	</head>
+	<body>
+	<h1> Other Ness Stuff </h1>
+	
+	
+	
+	<h2><a href = "index.html">Landing</a> <a href = "ness.html">Ness Frame Data</a></h2>
+	
+
+	
+		<p><input type="button" onclick = "showImg(true)" value= "Show Ness Matchup List"> 
+		<input type="button" onclick = "showImg(false)" value= "Hide Ness Matchup List"> </p>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="Pictures/NessDefaultSkin.png" draggable="true" ondragstart="drag(event)" >
+
+	
+	<img id="NessMUShow" src="Pictures/NessMUList.png" style="display:none" > 
+	
+	</body>
+</html>

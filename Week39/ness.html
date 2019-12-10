@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<script>
+var endLag, totFrames, startFrames, activeFrames;
+endLag = calcGroundMoveEndLag(totFrames, startFrames, activeFrames);
+
+function calcGroundMoveEndLag(totFrames, startFrames, activeFrames)
+{
+	endLag = totFrames - startFrames - activeFrames;
+	return endLag;
+}
+</script>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="nessstyle.css">
+		<title> Ness Frame Data </title>
+	</head>
+	<body>
+	
+	<h1>Ness Frame Data</h1>
+	
+	<h2><a href = "index.html">Main Page</a> <a href = "OtherNess.html">More Ness</a></h2>
+
+	<h3 id="GHeader"> Ground moves </h3>
+		
+			<div class="flex-container">
+	
+	
+		
+		<table id="gm">
+			<tr>
+				<th>
+				<h4>Move Name </h4>  <br>
+				<mark id="su"> Startup Frames </mark> <br>
+				<mark id="act"> Active Frames </mark> <br>
+				<mark id="tot"> Total Frames </mark> <br>
+				<mark id="el"> End Lag </mark> <br>
+				<mark id="sst"> Shield Stun </mark> <br>
+				<mark id="sl"> Shield Lag </mark> <br>
+				<mark id="ssf"> Shield Safety </mark> <br>
+				<mark id="n"> Notes </mark> <br>
+				<mark id="mhb"> Hit boxes </mark>
+				</th>
+				
+				<th> <h4> Jab 1 </h4> <br>
+				<mark id="su"> 3 Frames </mark> <br>
+				<mark id="act"> 1 Frame </mark><br>
+				<mark id="tot"> 19 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(19,3,1); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="sst"> 3 Frames </mark> <br> 
+				<mark id="sl"> 8 Frames </mark> <br> 
+				<mark id="ssf"> -13 Frames </mark> <br> 
+				<mark id="n"> Jab 2 starts on frame 5, 2%dmg </mark> <br>
+				<mark id="mhb"> 1 hit box </mark>		
+				</th>
+				
+				<th> <h4> Jab 2 </h4> <br>
+				<mark id ="su"> 3 Frames </mark>  <br>
+				<mark id="act"> 1 Frame  </mark><br>
+				<mark id="tot">19 Frames  </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(19,3,1); document.write(arvo) </script> 
+								Frames </mark> <br>	
+				<mark id="sst">	3 Frames  </mark><br>
+				<mark id="sl">	5 Frames </mark> <br>
+				<mark id="ssf">	-13 Frames </mark> <br>
+				<mark id="n"> Jab 3 starts on frame 6, 1.5% dmg </mark><br>
+				<mark id="mhb">	1 hit box </mark>
+				</th>
+				
+				<th> <h4> Jab 3 </h4> <br>
+				<mark id ="su"> 6 Frames </mark>  <br>
+				<mark id="act"> 2 Frames, 6-7  </mark><br>
+				<mark id="tot"> 29 Frames  </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(29,6,2); document.write(arvo) </script> 
+								Frames </mark><br>		
+				<mark id="sst">	5 Frames  </mark><br>
+				<mark id="sl">	11 Frames </mark> <br>
+				<mark id="ssf">	-18 Frames </mark> <br>
+				<mark id="n"> 4% dmg </mark><br>
+				<mark id="mhb">	1 hit box </mark>
+				</th>
+			</tr>
+			<tr>
+			
+			<th>
+				<h4> Forward Tilt </h4>  <br>
+				<mark id="su"> 7 Frames </mark> <br>
+				<mark id="act"> 4 Frames, from 7-10 </mark> <br>
+				<mark id="tot"> 34 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(34,7,4); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="sst"> 10 Frames </mark> <br>
+				<mark id="sl"> 8 Frames </mark> <br>
+				<mark id="ssf"> -17 Frames </mark> <br>
+				<mark id="n">Can be angled up and down. 10% dmg </mark> <br>
+				<mark id="mhb"> 1 Hit box </mark>
+				</th>
+				
+				<th> <h4> Up Tilt </h4> <br>
+				<mark id="su"> 5 Frames </mark> <br>
+				<mark id="act"> 2 Frames, from 5-6. 2 Frames, from 7-8 </mark><br>
+				<mark id="tot"> 28 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(28,5,2); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="sst"> 7 / 6 Frames </mark> <br> 
+				<mark id="sl"> 7 / 6 Frames </mark> <br> 
+				<mark id="ssf"> -16 / -17 Frames </mark> <br> 
+				<mark id="n"> 7% dmg / 5% dmg </mark> <br>
+				<mark id="mhb"> 2 hitboxes, Close / Far </mark>		
+				</th>
+				
+				<th> <h4> Down Tilt </h4> <br>
+				<mark id ="su"> 3 Frames </mark>  <br>
+				<mark id="act"> 2 Frames, from 3-4  </mark><br>
+				<mark id="tot"> 11 Frames  </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(11,3,2); document.write(arvo) </script> 
+								Frames </mark> <br>	
+				<mark id="sst">	5 / 4 Frames  </mark><br>
+				<mark id="sl">	5 / 5 Frames </mark> <br>
+				<mark id="ssf">	-3 / -4 Frames </mark> <br>
+				<mark id="n">Next Dtilt starts on frame 6, 4.5% / 3% dmg</mark><br>
+				<mark id="mhb">	2 hit boxes, Close/Far </mark>
+				</th>
+				
+				<th> <h4> Dash Attack </h4> <br>
+				<mark id ="su"> 8 / 15 / 23 Frames </mark>  <br>
+				<mark id="act"> 1 Frame, 8 / 2 Frames 15-16 / 2 Frames 23-24</mark><br>
+				<mark id="tot"> 39 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(39,23,2); document.write(arvo) </script> 
+								Frames </mark><br>		
+				<mark id="sst">	5 / 3 / 5 Frames  </mark><br>
+				<mark id="sl">	5 / 4 / 9 Frames </mark> <br>
+				<mark id="ssf">	-12 Frames </mark> <br>
+				<mark id="n"> 	4% / 2% / 4% dmg  </mark><br>
+				<mark id="mhb">	3 hit boxes, Close / Far / Farthest </mark>
+				</th>
+			</tr>
+			<tr>
+				<th>
+				<h4> Forward Smash </h4>  <br>
+				<mark id="su"> 21 Frames </mark> <br>
+				<mark id="act"> 2 Frames, from 21-22 </mark> <br>
+				<mark id="tot"> 54 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(54,21,2); document.write(arvo) </script>
+				Frames </mark> <br>
+				<mark id="sst"> 12 / 13 / 14 Frames </mark> <br>
+				<mark id="sl"> 11 / 12 / 15 Frames </mark> <br>
+				<mark id="ssf"> -21 / -20 / -19 Frames </mark> <br>
+				<mark id="n">Reflects for a total of 13 frames, on Frames 18-30, the speed of the projectile becomes 2.5 times faster. Charge hold is frame 10</mark> <br>
+				<mark id="mhb"> 3 Hit boxes, Close (Weak) / Far (Strong) / Farthest (Strongest) </mark>
+				</th>
+				
+				<th> <h4> Up Smash </h4> <br>
+				<mark id="su"> 10 Frames </mark> <br>
+				<mark id="act"> 23 Frames, from 10-32</mark><br>
+				<mark id="tot"> 52 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(52,10,23); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="sst"> 2 / 9 Frames </mark> <br> 
+				<mark id="sl"> 4 / 9 Frames </mark> <br> 
+				<mark id="ssf"> -33 Frames </mark> <br> 
+				<mark id="n">Charge hold is frame 10, creates a hitbox every 6 frames. 1.2% / 13% dmg</mark> <br>
+				<mark id="mhb"> 2 hit boxes, Charge / Launch </mark>		
+				</th>
+				
+				<th> <h4> Down Smash </h4> <br>
+				<mark id ="su"> 12 / 17 / 23 / 31 Frames </mark>  <br>
+				<mark id="act"> 4 Frames, 12-15 / 2 Frames, 17-18 / 2 Frames, 31-32</mark><br>
+				<mark id="tot"> 45 Frames  </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(45,31,2); document.write(arvo) </script> 
+								Frames </mark> <br>	
+				<mark id="sst">	2 / 7 Frames  </mark><br>
+				<mark id="sl">	4 / 8 Frames </mark> <br>
+				<mark id="ssf">	-21 / -7 Frames </mark> <br>
+				<mark id="n">Charge hold is frame 12, creates a hitbox every 6 frames. 1% / 10% dmg</mark><br>
+				<mark id="mhb">3 hit boxes, Charge / Launch (Strong) / Front (Weak) </mark>
+				</th>
+			</tr>
+		</table>
+		</div>
+		
+			<h3 id="AHeader"> Aerial moves </h3>
+			
+			<div class ="flex-container" >
+			
+			
+		<table id="am">
+			<tr>
+				<th>
+				<h4>Move Name </h4>  <br>
+				<mark id="su"> Startup Frames </mark> <br>
+				<mark id="act"> Active Frames </mark> <br>
+				<mark id="tot"> Total Frames </mark> <br>
+				<mark id="el"> End Lag </mark> <br>
+				<mark id="ll"> Landing Lag </mark> <br>
+				<mark id="sst"> Shield Stun </mark> <br>
+				<mark id="sl"> Shield Lag </mark> <br>
+				<mark id="ssf"> Shield Safety </mark> <br>
+				<mark id="n"> Notes</mark> <br>
+				<mark id="mhb"> Hit boxes </mark>
+				</th>
+				
+				<th>
+				<h4> Neutral Air </h4>  <br>
+				<mark id="su"> 5 Frames </mark> <br>
+				<mark id="act"> 5 - 12 / 13 - 15 Frames </mark> <br>
+				<mark id="tot"> 35 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(35,5,11); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll"> 8 Frames </mark> <br>
+				<mark id="sst"> 4 / 3 Frames </mark> <br>
+				<mark id="sl"> 8 / 7 Frames </mark> <br>
+				<mark id="ssf"> -4 / -5 Frames </mark> <br>
+				<mark id="n"> Autocancels on frame 1 - 4 and 26 onward. 11% / 7% dmg </mark> <br>
+				<mark id="mhb"> 2 Hit boxes, early (strong) / late (weak) </mark>
+				</th>
+				
+				<th>
+				<h4> Forward Air </h4>  <br>
+				<mark id="su"> 8 / 13 / 18 / 20 Frames </mark> <br>
+				<mark id="act"> 8 / 13 / 18 / 20 - 21 Frames </mark> <br>
+				<mark id="tot"> 39 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(39,20,5); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll"> 12 Frames </mark> <br>
+				<mark id="sst"> 2 / 3 Frames </mark> <br>
+				<mark id="sl"> 4 / 9 Frames </mark> <br>
+				<mark id="ssf"> -10 / -9 Frames </mark> <br>
+				<mark id="n"> Autocancels on frame 1 - 7 and 33 onward. 1.5% / 5.5%</mark> <br>
+				<mark id="mhb"> 4 Hit boxes, early multihits (Weak) / late (Strong) </mark>
+				</th>
+				
+				<th>
+				<h4> Back Air </h4>  <br>
+				<mark id="su"> 10 Frames </mark> <br>
+				<mark id="act"> 10 - 11 / 12 - 18 Frames </mark> <br>
+				<mark id="tot"> 35 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(35,10,9); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll"> 10 Frames </mark> <br>
+				<mark id="sst"> 5 / 4 Frames </mark> <br>
+				<mark id="sl"> 10 / 7 Frames </mark> <br>
+				<mark id="ssf"> -5 / -6 Frames </mark> <br>
+				<mark id="n"> Autocancels on frame 1 - 9 and 25 onward. 15% / 8%</mark> <br>
+				<mark id="mhb"> 2 Hit boxes, early (Strong) / late (Weak) </mark>
+				</th>
+			</tr>
+			<tr>
+			<th>
+				<h4> Up Air </h4>  <br>
+				<mark id="su"> 8 / 10 / 12 / 14 / 15 Frames </mark> <br>
+				<mark id="act"> 8 / 10 / 12 / 14 / 15 - 16 Frames </mark> <br>
+				<mark id="tot"> 33 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(33,15,6); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll"> 8 Frames </mark> <br>
+				<mark id="sst"> 2 / 3 Frames </mark> <br>
+				<mark id="sl"> 5 / 9 Frames </mark> <br>
+				<mark id="ssf"> -6 / -5 Frames </mark> <br>
+				<mark id="n"> Autocancels on frame 1 - 7 and 34 onward. 2.5% / 5%</mark> <br>
+				<mark id="mhb"> 2 Hit boxes, early multihits (Weak) / late (Strong) </mark>
+				</th>
+			 <th>
+			 
+			<h4> Down Air </h4>  <br>
+				<mark id="su"> 20 Frames </mark> <br>
+				<mark id="act"> 20 - 22 / 23 - 26 Frames </mark> <br>
+				<mark id="tot"> 54 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(54,20,7); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll"> 12 Frames </mark> <br>
+				<mark id="sst"> x / x Frames </mark> <br>
+				<mark id="sl"> x / x Frames </mark> <br>
+				<mark id="ssf"> -7 / -8 Frames </mark> <br>
+				<mark id="n"> Autocancels on frame 1 - 19 and 41 onward. 14.2% / 12.2%</mark> <br>
+				<mark id="mhb"> 2 Hit boxes, early (Strong, spike) / late (Weak, no spike) </mark>
+				</th>
+			
+				<th>
+				<h4>Extra notes </h4>  <br>
+				<mark id="su"> Startup Frames </mark> <br>
+				<mark id="act"> Active Frames. You can cancel the last hit of multhit aerials by landing before it comes out, this can be used for "dragdown" combos </mark> <br>
+				<mark id="tot"> Total Frames </mark> <br>
+				<mark id="el"> End Lag. For this calculation it is assumed that the character is airborne, even after the move has ended </mark> <br>
+				<mark id="ll"> Landing Lag </mark> <br>
+				<mark id="sst"> Shield Stun </mark> <br>
+				<mark id="sl"> Shield Lag </mark> <br>
+				<mark id="ssf"> Shield Safety. This shield safety only applies when the move is done frame perfect </mark> <br>
+				<mark id="n"> Notes. Aerials done from sh do 85% of the dmg that fh aerials do. this frame data has sh dmg only</mark> <br>
+				<mark id="mhb"> Hit boxes </mark>
+				</th>
+			
+			</tr>
+		</table>
+		</div>
+		
+			<h3 id="SHeader"> Specials </h3>
+			
+			<div class ="flex-container" >
+				
+		<table id="sm">
+			<tr>
+				<th>
+				<h4>Move Name </h4>  <br>
+				<mark id="su"> Startup Frames </mark> <br>
+				<mark id="act"> Active Frames </mark> <br>
+				<mark id="tot"> Total Frames </mark> <br>
+				<mark id="el"> End Lag </mark> <br>
+				<mark id="ll"> Landing Lag </mark> <br>
+				<mark id="sst"> Shield Stun </mark> <br>
+				<mark id="sl"> Shield Lag </mark> <br>
+				<mark id="ssf"> Shield Safety </mark> <br>
+				<mark id="n"> Notes</mark> <br>
+				<mark id="mhb"> Hit boxes </mark>
+				</th>
+				
+				<th>
+				<h4>Neutral Special (PK Flash) </h4>  <br>
+				<mark id="su"> 44 - 121 Frames </mark> <br>
+				<mark id="act"> 44 - 48 / 121 - 125 Frames </mark> <br>
+				<mark id="tot"> 65 - 121 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(65,44,5); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll">  -- </mark> <br>
+				<mark id="sst"> 4 - 8 Frames </mark> <br>
+				<mark id="sl"> 13 - 17 Frames </mark> <br>
+				<mark id="ssf"> -4 to +4 Frames </mark> <br>
+				<mark id="n">Instant release has 14 Frames of startup and 35 Frames in total. 11% - 27% dmg </mark> <br>
+				<mark id="mhb"> 1 Hit box </mark>
+				</th>
+				<th>
+				<h4>Side Special (PK Fire) </h4>  <br>
+				<mark id="su"> 18 Frames </mark> <br>
+				<mark id="act"> 18 - 37 Frames </mark> <br>
+				<mark id="tot"> 55 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(55,18,20); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll">  12 Frames </mark> <br>
+				<mark id="sst"> 3 Frames </mark> <br>
+				<mark id="sl"> 6 Frames </mark> <br>
+				<mark id="ssf"> -18 Frames </mark> <br>
+				<mark id="n"> Doesn't erupt on shields. Flame pillar hits every 7 Frames and lasts for 100 Frames. 1% dmg every hit </mark> <br>
+				<mark id="mhb"> 2 Hitboxes, Projectile / Flame pillar</mark>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<h4>Up Special (PK Thunder) </h4>  <br>
+				<mark id="su"> 20 Frames </mark> <br>
+				<mark id="act"> 20 - 139 Frames </mark> <br>
+				<mark id="tot"> 55 Frames </mark> <br>
+				<mark id="el"> 39 Frames after hitting a target </mark> <br>
+				<mark id="ll">  -- </mark> <br>
+				<mark id="sst"> 4 / 10 Frames </mark> <br>
+				<mark id="sl"> 13 / 3 Frames </mark> <br>
+				<mark id="ssf"> -22 Frames </mark> <br>
+				<mark id="n">Tail Hitbox isn't a projectile. 11% / 2% dmg</mark> <br>
+				<mark id="mhb"> 2 Hitboxes, Ball / Tail</mark>
+				</th>
+				<th>
+				<h4>Up Special (PK Thunder 2) </h4>  <br>
+				<mark id="su"> 1 Frame </mark> <br>
+				<mark id="act"> 1 - 32 Frames </mark> <br>
+				<mark id="tot"> 56 Frames </mark> <br>
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(56,1,32); document.write(arvo) </script> Frames </mark> <br>
+				<mark id="ll"> 24 Frames, only if you enter special fall </mark> <br>
+				<mark id="sst"> 22 / 18 Frames </mark> <br>
+				<mark id="sl"> 6 Frames </mark> <br>
+				<mark id="ssf"> -18 Frames </mark> <br>
+				<mark id="n"> Invulnerable on Frames 1 - 32. Can be done a 2nd time after bouncing on a wall. Traverl distance shortens if it hits another hitbox / hurtbox. 30% / 25.2% dmg</mark> <br>
+				<mark id="mhb"> 2 Hitboxes, Early / Late</mark>
+				</th>
+				
+				<th>
+				<h4>Down Special (PSI Magnet) </h4>  <br>
+				<mark id="su"> 7 Frames </mark> <br>
+				<mark id="act"> 7 - 12 Frames during absorb</mark> <br>
+				<mark id="tot"> 24 Frames </mark> <br>
+				<mark id="el"> 9 Frames after release </mark> <br>
+				<mark id="ll"> -- </mark> <br>
+				<mark id="sst"> 5 Frames </mark> <br>
+				<mark id="sl"> 5 Frames </mark> <br>
+				<mark id="ssf"> -12 Frames </mark> <br>
+				<mark id="n"> Can only absorb energy projectiles. 5% dmg</mark> <br>
+				<mark id="mhb"> 1 Hitbox</mark>
+				</th>
+				
+				</tr>
+				</table
+				</div>
+				
+					<h3 id="GTHeader"> Grabs / Throws </h3>
+			
+			<div class ="flex-container" >
+				
+		<table id="GT">
+		<tr>
+		<th> <h4> Move name </h4> <br>
+		<mark id ="su"> Startup Frames </mark> <br>
+		<mark id = "act"> Active Frames </mark> <br>
+		<mark id = "tot"> Total Frames </mark> <br>
+		<mark id = "el"> End Lag </mark> <br>
+		<mark id = "n"> Notes </mark> <br>
+		<mark id = "mhb"> Hitboxes </mark> 
+		</th>
+		
+		<th> <h4> Standing Grab </h4> <br>
+		<mark id ="su"> 6 Frames </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 37 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(37,6,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> -- </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>	
+	
+		
+		<th> <h4> Dash Grab </h4> <br>
+		<mark id ="su"> 9 Frames </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 45 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(45,9,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> -- </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>	
+	
+		
+		<th> <h4> Pivot Grab </h4> <br>
+		<mark id ="su"> 10 Frames </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 40 Frames </mark> <br>
+		<mark id = "el">  <script> var arvo = calcGroundMoveEndLag(40,10,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> -- </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>
+		</tr>
+		<tr>
+		
+		<th> <h4>Pummel</h4> <br>
+		<mark id ="su"> 1 Frame </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 19 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(19,1,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> 14 Frames of Hitlag. 1.3% dmg </mark> <br>
+		<mark id = "mhb"> 1 Hitbox </mark> 
+		</th>	
+		
+		
+		
+		<th> <h4> Forward Throw </h4> <br>
+		<mark id ="su"> 27 Frames </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 52 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(52,27,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> 13% dmg </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>
+		
+		<th> <h4> Back Throw </h4> <br>
+		<mark id ="su"> 27 Frames </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 52 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(52,27,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> 13% dmg </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>
+		
+		<th> <h4> Up Throw </h4> <br>
+		<mark id ="su"> 36 Frames </mark> <br>
+		<mark id = "act"> 1 Frame </mark> <br>
+		<mark id = "tot"> 55 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(55,36,1); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> 11% dmg </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>
+		
+		<th> <h4> Forward Throw </h4> <br>
+		<mark id ="su"> 6 / 10 / 14 / 27 / 28 Frames </mark> <br>
+		<mark id = "act"> 5 Frame </mark> <br>
+		<mark id = "tot"> 50 Frames </mark> <br>
+		<mark id = "el"> <script> var arvo = calcGroundMoveEndLag(50,28,5); document.write(arvo) </script> Frames </mark> <br>
+		<mark id = "n"> 1% / 1.5% / 4% dmg </mark> <br>
+		<mark id = "mhb"> -- </mark> 
+		</th>
+		
+		
+		</tr>
+		
+		</table>
+		</div>
+		
+				<h3 id="DRHeader"> Dodges / Rolls </h3>
+			
+			<div class ="flex-container" >
+				
+		<table id="DR">
+		<tr>
+		<th> <h4> Move name </h4> <br>
+		<mark id ="su"> Startup Frames </mark> <br>
+		<mark id = "act"> Invulnerability Frames </mark> <br>
+		<mark id = "tot"> Total Frames </mark> <br>
+		<mark id = "el"> Non-invulnerable Frames </mark> <br>
+		<mark id = "n"> Notes </mark> <br> 
+		</th>
+		<th> <h4> Spot Dodge </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 17 Frames </mark> <br>
+		<mark id = "tot"> 20 / 25 Frames </mark> <br>
+		<mark id = "el"> 3 / 8 Frames </mark> <br>
+		<mark id = "n"> Canceled spot dodge / normal spot dodge </mark> <br> 
+		</th>
+		<th> <h4> Forward Roll </h4> <br>
+		<mark id ="su"> 4 Frames </mark> <br>
+		<mark id = "act"> 4 - 15 Frames </mark> <br>
+		<mark id = "tot"> 29 Frames </mark> <br>
+		<mark id = "el"> 14 Frames </mark> <br>
+		<mark id = "n"> -- </mark> <br> 
+		</th>
+		<th> <h4> Backward Roll </h4> <br>
+		<mark id ="su"> 5 Frames </mark> <br>
+		<mark id = "act"> 5 - 16 Frames </mark> <br>
+		<mark id = "tot"> 34 Frames </mark> <br>
+		<mark id = "el"> 18 Frames </mark> <br>
+		<mark id = "n"> -- </mark> <br> 
+		</th>
+		</tr>
+		<tr>
+		<th> <h4> Neutral Air Dodge </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 30 Frames </mark> <br>
+		<mark id = "tot"> 59 Frames </mark> <br>
+		<mark id = "el"> 29 Frames </mark> <br>
+		<mark id = "n"> 10 Frames of Landing Lag </mark> <br> 
+		</th>
+		<th> <h4> Directional Air Dodge Down </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 21 Frames </mark> <br>
+		<mark id = "tot"> 77 Frames </mark> <br>
+		<mark id = "el"> 56 Frames </mark> <br>
+		<mark id = "n"> 11 - 19 Frames of Landing Lag </mark> <br> 
+		</th>
+		<th> <h4> Directional Air Dodge Diagonally Down </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 21 Frames </mark> <br>
+		<mark id = "tot"> 86 Frames </mark> <br>
+		<mark id = "el"> 65 Frames </mark> <br>
+		<mark id = "n"> 11 - 19 Frames of Landing Lag </mark> <br> 
+		</th>
+		<th> <h4> Directional Air Dodge Left / Right </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 21 Frames </mark> <br>
+		<mark id = "tot"> 99 Frames </mark> <br>
+		<mark id = "el"> 78 Frames </mark> <br>
+		<mark id = "n"> 11 - 19 Frames of Landing Lag </mark> <br> 
+		</th>		
+		<th> <h4> Directional Air Dodge Diagonally Up </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 21 Frames </mark> <br>
+		<mark id = "tot"> 119 Frames </mark> <br>
+		<mark id = "el"> 98 Frames </mark> <br>
+		<mark id = "n"> 11 - 19 Frames of Landing Lag </mark> <br> 
+		</th>
+		<th> <h4> Directional Air Dodge Up </h4> <br>
+		<mark id ="su"> 3 Frames </mark> <br>
+		<mark id = "act"> 3 - 21 Frames </mark> <br>
+		<mark id = "tot"> 134 Frames </mark> <br>
+		<mark id = "el"> 113 Frames </mark> <br>
+		<mark id = "n"> 11 - 19 Frames of Landing Lag </mark> <br> 
+		</th>
+		<tr>
+		</table>
+		</div>
+		
+		<h3 id="LedgeHeader"> Ledge Options </h3>
+		
+			<div class ="flex-container" >
+			
+		<table id="LO">
+		<tr>
+		<th> <h4> Move Name </h4> <br>
+		<mark id="su"> Startup Frames </mark> <br>
+				<mark id="act"> Intangability Frames </mark><br>
+				<mark id="tot"> Total Frames </mark> <br>	
+				<mark id="el"> End Lag </mark> <br>
+				<mark id="ssf"> Shield Safety </mark> <br> 
+				<mark id="n"> Bad Range </mark> <br>	
+		</th>
+		<th><h4> Ledge Attack </h4> <br>
+		<mark id="su"> 1 Frames </mark> <br>
+				<mark id="act"> 1 - 24 Frames </mark><br>
+				<mark id="tot"> 55 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(55,1,23); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="ssf"> -24 Frames </mark> <br> 
+				<mark id="n"> Bad Range </mark> <br>
+		</th>
+		<th> <h4> Neutral Getup </h4> <br>
+		<mark id="su"> 1 Frames </mark> <br>
+				<mark id="act"> 1 - 33 Frames </mark><br>
+				<mark id="tot"> 34 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(34,1,32); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="ssf"> -- </mark> <br> 
+				<mark id="n"> -- </mark> <br>
+		</th>
+		<th> <h4> Roll Getup </h4> <br>
+		<mark id="su"> 1 Frames </mark> <br>
+				<mark id="act"> 1 - 24 Frames </mark><br>
+				<mark id="tot"> 45 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(45,1,24); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="ssf"> -- </mark> <br> 
+				<mark id="n"> -- </mark> <br>
+		</th>
+		<th> <h4> Jump Getup </h4> <br>
+		<mark id="su"> 1 Frames </mark> <br>
+				<mark id="act"> 1 - 12 Frames </mark><br>
+				<mark id="tot"> 14 Frames </mark> <br>	
+				<mark id="el"> <script> var arvo = calcGroundMoveEndLag(14,1,12); document.write(arvo) </script> 
+								Frames </mark> <br>
+				<mark id="ssf"> -- </mark> <br> 
+				<mark id="n"> -- </mark> <br>
+		</th>
+		</tr>
+		</table>
+		</div>
+		<ul>
+			<li>
+			<h3 id="StatsHeader"> Stats </h3> </li>
+			</ul>
+			<div class ="flex-container" >
+			<ul id="GroundUL">
+			<li id="GroundLI"> Ground Stats</li>
+			<li id="GroundLI"> Weight 94 Units (Middle Weight) </li>
+			<li id="GroundLI"> Walk Speed 0.907 Units </li>
+			<li id="GroundLI"> Run Speed 1.609 Units </li>
+			<li id="GroundLI" >Initial Dash 1.826 Units </li>
+			</ul>
+			<ul id ="AirUL">
+			<li id ="AirLI" > Air Stats</li>
+			<li id ="AirLI" > Air Speed 1.007 Units </li>
+			<li id ="AirLI"> Air Acceleration 0.1 Units </li>
+			<li id ="AirLI"> Jump Durations </li>
+			<li id ="AirLI"> Short Hop no Fast Fall 42 Frames </li>
+			<li id ="AirLI"> Short Hop with Fast Fall 29 Frames </li>
+			<li id ="AirLI"> Full Hop no Fast Fall 58 Frames </li>
+			<li id ="AirLI"> Full Hop with Fast Fall 41 Frames </li>
+			<li id ="AirLI"> Fall Speed 1.31 Units </li>
+			<li id ="AirLI"> Fast Fall Speed 2.096 Units </li>
+			<li id ="AirLI"> Jump Squat 3 Frames </li>
+			</ul>
+		
+			<h2><a href = "index.html">Main Page</a> <a href = "OtherNess.html">More Ness</a></h2>
+		
+	</body>
+</html>

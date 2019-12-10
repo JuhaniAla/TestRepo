@@ -1,0 +1,98 @@
+body 
+{
+	background-color: LightGray;
+}
+
+
+h1 
+{
+	margin-left: auto;
+	text-align: center;
+	color: gray;
+	//border: 10px solid green;
+	margin-right: auto;
+	
+}
+
+p 
+{
+	color: gray;
+	
+	
+}
+
+img
+{
+	//width:128px;
+	//height:128px;
+	
+}
+
+li 
+{
+	
+//	border: 20px inset yellow;	
+	
+}
+
+
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+div
+{
+	//padding-right: 500px;
+	
+}
+
+aside
+{
+	
+}
+
+.flex-container
+{
+	margin-top: 100px;
+	
+	display: flex;
+	
+	flex-direction: column;
+
+	justify-content: center;
+	justify-content: space-around;	
+	align-items: center;
+		
+
+	
+	
+	Height: 450px;
+}
+
+table
+{	
+
+	//border: 10px solid Orange;
+}
+
+tr
+{
+	//margin-left:800px;
+	//margin-right:800px;
+	
+	border: 10px solid Black;
+}
+
+
+th 
+{
+	border: 10px solid Black;
+}
+	
+
+
